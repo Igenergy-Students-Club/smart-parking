@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Fira Code', monospace;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(146, 146, 153) 34%, rgb(51, 48, 53) 71%);
+}
+.card{
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 1px 12px 20px 0px rgba(0,0,0,0.5);
+}
+/*Start smart-park*/
+.card .smart-park{
+    width: 100%;
+    height: 18%;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.card .smart-park .image{
+    width: 12%;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+.card .smart-park .image img{
+    /* width: 100%; */
+    width: 45px;
+    height: 40px;
+    margin: 5px 0px;
+}
+.card .smart-park .text {
+    width: 20%;
+    height: 10%;
+    margin-top: 10px;
+    margin-left: -10%;
+}
+.card .smart-park .text h1{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 300;
+}
+.card .smart-park .text h1 span{
+    font-weight: bold;
+}
+/*End smart-park*/
+
+/*Start trig*/
+.parent .card .trig{
+    width: 100%;
+    height: 20%;
+    background-color: grey;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.parent .card .trig img{
+    width: 30%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.parent .card .trig .trig-one {
+    width: 90%;
+    height: 2%;
+    position: relative;
+}
+.parent .card .trig .trig-one::before{
+    content: "";
+    position: absolute;
+    background-image:linear-gradient(to right,
+      #fff 0%, #fff 5%,
+      grey 5% , grey 10%,
+      #fff 10%, #fff 15%,
+      grey 15% , grey 20%,
+      #fff 20% , #fff 25%,
+      grey 25% , grey 30%,
+      #fff 30%, #fff 35%,
+      grey 35% , grey 40%,
+      #fff 40% , #fff 45%,
+      grey 45% , grey 50%,
+      #fff 50% , #fff 55%,
+      grey 55% , grey 60%,
+      #fff 60%, #fff 65%,
+      grey 65% , grey 70%,
+      #fff 70% , #fff 75%,
+      grey 75% , grey 80%,
+      #fff 80% , #fff 85%,
+      grey 85%, grey 90%,
+      #fff 90% , #fff 95%,
+      grey 95% , grey 100%
+      );
+      width: 100%;
+      height: 5px;
+      right: 15px;
+      top: 45px;
+    }
+/*End trig*/
+
+/*Start places*/
+.parent .card .places{
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 35% repeat(3,1fr);
+}
+.parent .card .places .one{
+    width: 100%;
+}
+.parent .card .places .one p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.6;
+    position: relative;
+}
+.parent .card .places .one p img{
+    width: 10%;
+}
+.parent .card .places .one::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 47%;
+    background-image:linear-gradient(to bottom,
+      #fff 0%, #fff 10%,
+      black 10% , black 20%,
+      #fff 20% , #fff 30%,
+      black 30% , black 40%,
+      #fff 40%, #fff 50%,
+      black 50% , black 60%,
+      #fff 60%, #fff 70%,
+      black 70% , black 80%,
+      #fff 80% , #fff 90%,
+      black 90% , black 100%
+      );    left: 35%;
+    top: 41%;
+}
+.parent .card .places .two::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 47%;
+    background-image:linear-gradient(to bottom,
+      #fff 0%, #fff 10%,
+      black 10% , black 20%,
+      #fff 20% , #fff 30%,
+      black 30% , black 40%,
+      #fff 40%, #fff 50%,
+      black 50% , black 60%,
+      #fff 60%, #fff 70%,
+      black 70% , black 80%,
+      #fff 80% , #fff 90%,
+      black 90% , black 100%
+      );
+    top: 41%;
+    left: 56.5%;
+}
+.parent .card .places .three::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 47%;
+    background-image:linear-gradient(to bottom,
+      #fff 0%, #fff 10%,
+      black 10% , black 20%,
+      #fff 20% , #fff 30%,
+      black 30% , black 40%,
+      #fff 40%, #fff 50%,
+      black 50% , black 60%,
+      #fff 60%, #fff 70%,
+      black 70% , black 80%,
+      #fff 80% , #fff 90%,
+      black 90% , black 100%
+      );    left: 78%;
+    top: 41%;
+}
+.parent .card .places .four::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 47%;
+    background-image:linear-gradient(to bottom,
+      #fff 0%, #fff 10%,
+      black 10% , black 20%,
+      #fff 20% , #fff 30%,
+      black 30% , black 40%,
+      #fff 40%, #fff 50%,
+      black 50% , black 60%,
+      #fff 60%, #fff 70%,
+      black 70% , black 80%,
+      #fff 80% , #fff 90%,
+      black 90% , black 100%
+      );    left: 99.5%;
+    top: 41%;
+}
+.parent .card .places div div{
+    background-color: red;
+    width: 80%;
+    margin: 40px auto;
+    height: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.parent .card .places div h1{
+    margin: 50px auto 10px;
+}
+.parent .card .places .three div{
+    background-color: green;
+}
+/*End places*/
+
+.hr-place{
+    background-image:linear-gradient(to right,
+        #fff 0%, #fff 5%,
+        black 5% , black 10%,
+        #fff 10% , #fff 15%,
+        black 15% , black 20%,
+        #fff 20%, #fff 25%,
+        black 25% , black 30%,
+        #fff 30%, #fff 35%,
+        black 35% , black 40%,
+        #fff 40% , #fff 45%,
+        black 45% , black 50%,
+        #fff 50%, #fff 55%,
+        black 55% , black 60%,
+        #fff 60% , #fff 65%,
+        black 65% , black 70%,
+        #fff 70%, #fff 75%,
+        black 75% , black 80%,
+        #fff 80%, #fff 85%,
+        black 85% , black 90%,
+        #fff 90% , #fff 95%,
+        black 95% , black 100%
+        );
+        border: none;
+        height: 3px;
+        margin-left: 30px;
+}
+
+/*Start see-project*/
+.parent .card .see-project{
+    width: 100%;
+    height: 10%;
+    color: #fff;
+}
+.parent .card .see-project h1{
+    text-align: center;
+    margin-top: 5px;
+}
+.parent .card .see-project h1 a{
+    color: #fff;
+}
+/*End see-project*/
+
+h1{
+    text-align: center;
+    font-size: 16px;
+}
